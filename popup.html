@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="A simple to-do list for Chrome that helps you stay organized. Add tasks with due dates, check them off when completed, and view completed tasks.">
+  <title>ToDo</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <div id="todo-container">
+    <div id="logo-container">
+      <img src="icons/icon32.png" alt="Logo" style="height: 30px; margin-right: 10px;">
+      <h1 style="color: #33B5AA;">ToDo</h1>
+    </div>
+    <div id="todo-input-container">
+      <form id="todo-form">
+        <div>
+          <input type="text" id="todo-input" placeholder="Enter a new task...">
+        </div>
+        <div>
+          <input type="date" id="todo-date">
+        </div>
+        <button type="submit">Add</button>
+      </form>
+    </div>
+    <div id="task-list-container">
+      <h2>Tasks</h2>
+      <ul id="task-list"></ul>
+      <h2>Completed</h2>
+      <button id="toggle-completed">Show Completed</button>
+      <ul id="completed-list" style="display: none;"></ul>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

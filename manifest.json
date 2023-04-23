@@ -1,0 +1,20 @@
+{
+  "name": "ToDo - Organize your day",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Stay organized and productive with ToDo, a simple to-do list Chrome extension. Start organizing your day!"
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": "icons/icon128.png",
+    "default_title": "ToDo",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage"
+  ]
+}

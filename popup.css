@@ -1,0 +1,214 @@
+/* Set default font size and background color */
+body {
+  font-size: 15px;
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the to-do list container on the page */
+#todo-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the logo container */
+#logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #33b5aa;
+  margin-bottom: 20px;
+}
+
+/* Size and position the logo */
+#logo-container img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Style the logo text */
+#logo-container h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #33b5aa;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the to-do form */
+#todo-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+/* Style the form inputs and button */
+#todo-form input[type="text"],
+#todo-form input[type="date"],
+#todo-form button[type="submit"] {
+  font-size: 14px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Size the form inputs */
+#todo-form input[type="text"],
+#todo-form input[type="date"] {
+  flex-grow: 1;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Style the form submit button */
+#todo-form button[type="submit"] {
+  background-color: #33b5aa;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 2s ease-in-out;
+}
+
+/* Style the task list container */
+#task-list-container {
+  margin-bottom: 5px;
+}
+
+/* Style the task list heading */
+#task-list-container h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #33b5aa;
+   border-radius: 5px;
+   padding: 1px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the task and completed lists */
+#task-list,
+#completed-list {
+  list-style-type: none;
+  padding: 10px;
+  margin: 1px;
+}
+
+/* Style the task and completed list items */
+#task-list li,
+#completed-list li {
+  background-color: #eee;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* Size and position the task and completed list item content */
+#task-list li span,
+#completed-list li span {
+  flex-grow: 5;
+}
+
+/* Style the task name */
+.task-name {
+  display: inline-block;
+font-size: 13px;
+font-weight: bold;
+text-align: center;
+padding: 6px;
+border: 5px;
+border-radius: 5px;
+}
+
+/* Style the task date */
+.task-date {
+display: inline-block;
+font-size: 12px;
+width: 90;
+padding: 3px;
+text-align: center;
+border: 3px;
+border-radius: 5px;
+}
+
+/* Style the delete task button */
+#task-list li button,
+#completed-list li button {
+background-color: #f44336;
+color: #fff;
+border: none;
+padding: 5px 5px;
+border-radius: 5px;
+cursor: pointer;
+
+}
+
+/* Style the completed task */
+.completed-task {
+background-color: #bfbfbf;
+text-decoration: line-through;
+}
+
+/* Show completed tasks */
+.show-completed {
+display: block;
+}
+
+/* Style the checkbox */
+input[type=checkbox] {
+appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+height: 20px;
+width: 20px;
+border-radius: 4px;
+outline: none;
+transition: all 1s ease-in-out;
+background-color: white;
+}
+
+/* Style the checked checkbox */
+input[type=checkbox]:checked:before {
+content: "\2713";
+display: block;
+text-align: center;
+color: white;
+font-size: 20px;
+line-height: 20px;
+transition: all 1s ease-in-out;
+background-color: #33B5AA;
+border-color: #33B5AA;
+border-radius: 4px;
+}
+
+/* Style the Add button */
+button#add-button {
+background-color: #33B5AA;
+}
+
+/* Style the Toggle Completed button */
+#toggle-completed {
+background-color: #33B5AA;
+color: white;
+border: none;
+border-radius: 5px;
+padding: 5px;
+margin: 5px 0;
+cursor: pointer;
+font-size: 15px;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+transition: background-color 0.3s ease-in-out;
+}
+
+/* Style the Toggle Completed button on hover */
+#toggle-completed:hover {
+background-color: #3ac1ad;
+}
